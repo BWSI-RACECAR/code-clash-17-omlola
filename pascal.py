@@ -35,9 +35,9 @@ class Solution:
         for l in range(len(lyst)):
             for m in range(l):
                 if m == 0 or m == l-1:
-                    lyst[l].append(1)
+                    lyst[l-1].append(1)
                 else:
-                    lyst[l].append(lyst[l-1][m] + lyst[l-1][m-1])
+                    lyst[l-1].append(lyst[l-2][m] + lyst[l-2][m-1])
         return lyst
 
 def main():

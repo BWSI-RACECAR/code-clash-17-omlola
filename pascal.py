@@ -38,6 +38,7 @@ class Solution:
                     lyst[l].append(1)
                 else:
                     lyst[l].append(lyst[l-1][m] + lyst[l-1][m-1])
+        return lyst
 
 def main():
     num = int(input())

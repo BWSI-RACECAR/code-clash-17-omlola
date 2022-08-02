@@ -30,7 +30,7 @@ class Solution:
 
         # TODO: Write code below to return a nested list with the solution to the prompt
         lyst = []
-        for i in range(rows):
+        for i in range(rows-1):
             lyst.append(list())
         for l in range(len(lyst)):
             for m in range(l):

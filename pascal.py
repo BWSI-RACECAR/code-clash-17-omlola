@@ -30,9 +30,9 @@ class Solution:
 
         # TODO: Write code below to return a nested list with the solution to the prompt
         lyst = []
-        for i in range(rows-1):
+        for i in range(rows):
             lyst.append(list())
-        for l in range(len(lyst)):
+        for l in range(len(lyst)+1):
             for m in range(l):
                 if m == 0 or m == l-1:
                     lyst[l-1].append(1)
